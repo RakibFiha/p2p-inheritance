@@ -1,5 +1,4 @@
 const Block = require("./block");
 
-const block = new Block("p2p", "inheritance", "blockchain", "dpos");
-console.log(block.toString());
-console.log(Block.genesis().toString());
+const testBlock = Block.mineBlock(Block.genesis(), "test");
+console.log(testBlock.toString());
