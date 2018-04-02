@@ -18,9 +18,6 @@ class Block{
   static genesis(){
     return new this("1522634807158", "16f98c2c38ab245e3ef6f72ea4015ac5", "52435f10c02dc34a4b245a49c92c3b9d", []);
   }
-  static  mineBlock(lastBlock, data){
-    const timestamp = Date.now();
-  }
 
   static mineBlock(lastBlock, data){
     const timestamp = Date.now();
